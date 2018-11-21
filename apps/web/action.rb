@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
 module Web
-  class Action < Hanami::Action
+  class Action < Soundeck::Action
   end
 end

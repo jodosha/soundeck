@@ -4,6 +4,8 @@ module Web
   module Actions
     module Home
       class Index < Web::Action
+        include Soundeck::Authentication::Skip
+
         def call(*, res)
           res.body = "OK"
         end
