@@ -7,6 +7,7 @@ module Web
         include Authentication::Skip
 
         def call(*, res)
+          Hanami.logger.debug("home")
           res.body = "OK"
         end
       end
