@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/hanami.git
-  revision: 932b4c3af193e121c5aca9dc69ef15282ed2a95a
+  revision: eb5c2cd5a6597e7cf9541b4ca4beea9e55fba39e
   branch: feature/application
   specs:
     hanami (2.0.0.alpha1)
