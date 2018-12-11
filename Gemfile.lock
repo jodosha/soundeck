@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/hanami/cli.git
-  revision: 280a5601186baeee9137c1096036ad4055ca8fd1
+  revision: daf18f87dc1f6341db0455309612e422882919f4
   branch: unstable
   specs:
     hanami-cli (1.0.0.alpha1)
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/controller.git
-  revision: e11d74d98d9733fc0786bcffd3dc28b72543bad7
+  revision: 63b69b0dda7badef15c80982828a46f056d6aee1
   branch: unstable
   specs:
     hanami-controller (2.0.0.alpha1)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/router.git
-  revision: 21d24856dc346672f359ce20132b9a04f2871359
+  revision: df2af40fa009b43c2a700a1032f77c5c951c5202
   branch: unstable
   specs:
     hanami-router (2.0.0.alpha1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/utils.git
-  revision: 3f4c23367a250c505bd6bb7d853e17a328169d2e
+  revision: ab91f9c0799b907025198288f1bd59e080ca029b
   branch: unstable
   specs:
     hanami-utils (2.0.0.alpha1)
