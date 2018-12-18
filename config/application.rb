@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "soundeck"
+
 module Soundeck
   class Application < Hanami::Application
     config.cookies  = { max_age: 600 }
