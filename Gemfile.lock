@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/utils.git
-  revision: ab91f9c0799b907025198288f1bd59e080ca029b
+  revision: 471b9f6970c18ecd039549292dd67bbbb069ad3e
   branch: unstable
   specs:
     hanami-utils (2.0.0.alpha1)
@@ -86,7 +86,7 @@ GEM
       dry-equalizer (~> 0.2)
       dry-inflector (~> 0.1, >= 0.1.2)
       dry-struct (~> 0.5)
-    dry-types (0.13.3)
+    dry-types (0.13.4)
       concurrent-ruby (~> 1.0)
       dry-container (~> 0.3)
       dry-core (~> 0.4, >= 0.4.4)
@@ -117,4 +117,4 @@ DEPENDENCIES
   puma (~> 3.12)
 
 BUNDLED WITH
-   1.16.6
+   1.17.3
