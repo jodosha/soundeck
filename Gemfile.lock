@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/hanami/cli.git
-  revision: daf18f87dc1f6341db0455309612e422882919f4
+  revision: d0d33b8c052443ddb40a1d8f8a66690922453f32
   branch: unstable
   specs:
     hanami-cli (1.0.0.alpha1)
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/controller.git
-  revision: 63b69b0dda7badef15c80982828a46f056d6aee1
+  revision: 8eb9e4a34d03c1b8b895e9b15689bd62c77e69f1
   branch: unstable
   specs:
     hanami-controller (2.0.0.alpha1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/hanami.git
-  revision: 763e768547e65bd7a3ef38d889ed9aa9fbd43423
+  revision: d9566d3a042e64d95cf66bf4f87b523bb85a24ea
   branch: feature/application
   specs:
     hanami (2.0.0.alpha1)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/router.git
-  revision: df2af40fa009b43c2a700a1032f77c5c951c5202
+  revision: ecc4ad14142b77fba36a190a2d6e19ceebb9d1f6
   branch: unstable
   specs:
     hanami-router (2.0.0.alpha1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/utils.git
-  revision: 471b9f6970c18ecd039549292dd67bbbb069ad3e
+  revision: 02a3d66bc9bd15fafff64cc851556f5cc2332a0d
   branch: unstable
   specs:
     hanami-utils (2.0.0.alpha1)
@@ -56,7 +56,7 @@ GEM
   specs:
     byebug (10.0.2)
     concurrent-ruby (1.1.4)
-    dotenv (2.5.0)
+    dotenv (2.6.0)
     dry-auto_inject (0.6.0)
       dry-container (>= 0.3.4)
     dry-configurable (0.7.0)
