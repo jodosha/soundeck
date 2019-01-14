@@ -18,11 +18,11 @@ GIT
 
 GIT
   remote: https://github.com/hanami/hanami.git
-  revision: d9566d3a042e64d95cf66bf4f87b523bb85a24ea
+  revision: cfd7adbc2d996bc076dcec9720fdf50912c78929
   branch: feature/application
   specs:
     hanami (2.0.0.alpha1)
-      bundler (~> 1.16)
+      bundler (>= 1.16, < 3)
       dry-inflector (~> 0.1, >= 0.1.2)
       dry-system (~> 0.10)
       hanami-cli (~> 1.0.alpha)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/utils.git
-  revision: 02a3d66bc9bd15fafff64cc851556f5cc2332a0d
+  revision: 32af0f0d656187b4971aeae72cfafbbb692069f1
   branch: unstable
   specs:
     hanami-utils (2.0.0.alpha1)
