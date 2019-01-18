@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/controller.git
-  revision: 8eb9e4a34d03c1b8b895e9b15689bd62c77e69f1
+  revision: 14ab0b8a941f606651e8c300688110808398a379
   branch: unstable
   specs:
     hanami-controller (2.0.0.alpha1)
@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/router.git
-  revision: ecc4ad14142b77fba36a190a2d6e19ceebb9d1f6
+  revision: 89935fb67487d1d437a46b542b8232df5188b566
   branch: unstable
   specs:
     hanami-router (2.0.0.alpha1)
