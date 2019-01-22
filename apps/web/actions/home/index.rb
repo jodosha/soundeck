@@ -6,7 +6,7 @@ module Web
       class Index < Web::Action
         include Authentication::Skip
 
-        def call(*, res)
+        def handle(*, res)
           Hanami.logger.debug("home")
           res.body = "OK"
         end

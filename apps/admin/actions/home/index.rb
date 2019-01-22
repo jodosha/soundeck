@@ -2,7 +2,7 @@ module Admin
   module Actions
     module Home
       class Index < Admin::Action
-        def call(*, res)
+        def handle(*, res)
           res.body = "OK (admin)"
         end
       end
