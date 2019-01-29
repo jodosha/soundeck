@@ -10,6 +10,17 @@ gem "hanami",            "~> 2.0.alpha", require: false, git: "https://github.co
 
 # gem "hanami", path: "../hanami/hanami"
 
+group :plugins, :development do
+  gem "hanami-reloader", "~> 1.0.alpha", git: "https://github.com/hanami/reloader.git", branch: "unstable"
+end
+
+group :development do
+  gem "guard-puma", "~> 0.5"
+end
+
+group :development, :test do
+  gem "byebug", require: false
+end
+
 gem "puma",   "~> 3.12"
 gem "dotenv", "~> 2.5"
-gem "byebug", require: false
