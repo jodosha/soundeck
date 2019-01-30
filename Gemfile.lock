@@ -1,65 +1,3 @@
-GIT
-  remote: https://github.com/hanami/cli.git
-  revision: 804b784823b8c28425d85c2f583e604e2966ad8c
-  branch: unstable
-  specs:
-    hanami-cli (1.0.0.alpha1)
-      concurrent-ruby (~> 1.0)
-      hanami-utils (~> 2.0.alpha)
-
-GIT
-  remote: https://github.com/hanami/controller.git
-  revision: 4bbf1a046f3fa567db77d4cfc1d400fd330f7daa
-  branch: unstable
-  specs:
-    hanami-controller (2.0.0.alpha1)
-      hanami-utils (~> 2.0.alpha)
-      rack (~> 2.0)
-
-GIT
-  remote: https://github.com/hanami/hanami.git
-  revision: 7512bda5563473ca5263172955d6e845fe0ca4ee
-  branch: unstable
-  specs:
-    hanami (2.0.0.alpha1)
-      bundler (>= 1.16, < 3)
-      dry-inflector (~> 0.1, >= 0.1.2)
-      dry-system (~> 0.10)
-      hanami-cli (~> 1.0.alpha)
-      hanami-controller (~> 2.0.alpha)
-      hanami-router (~> 2.0.alpha)
-      hanami-utils (~> 2.0.alpha)
-
-GIT
-  remote: https://github.com/hanami/reloader.git
-  revision: a42ca9bf3688e949d6a0fcac8e44dbadc8766145
-  branch: unstable
-  specs:
-    hanami-reloader (1.0.0.alpha1)
-      guard-rack (~> 2.2)
-      hanami (~> 2.0.alpha)
-
-GIT
-  remote: https://github.com/hanami/router.git
-  revision: 02bfebb2376f0dde96baa5f0abcabf9a4dacde19
-  branch: unstable
-  specs:
-    hanami-router (2.0.0.alpha1)
-      dry-inflector (~> 0.1)
-      hanami-utils (~> 2.0.alpha)
-      mustermann (~> 1.0)
-      mustermann-contrib (~> 1.0)
-      rack (~> 2.0)
-
-GIT
-  remote: https://github.com/hanami/utils.git
-  revision: 0e348c2c0a6f508a8ba0f545723e05ed3b0382d4
-  branch: unstable
-  specs:
-    hanami-utils (2.0.0.alpha1)
-      concurrent-ruby (~> 1.0)
-      transproc (~> 1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -96,13 +34,13 @@ GEM
       dry-equalizer (~> 0.2)
       dry-inflector (~> 0.1, >= 0.1.2)
       dry-struct (~> 0.5)
-    dry-types (0.13.4)
+    dry-types (0.14.0)
       concurrent-ruby (~> 1.0)
       dry-container (~> 0.3)
       dry-core (~> 0.4, >= 0.4.4)
       dry-equalizer (~> 0.2)
       dry-inflector (~> 0.1, >= 0.1.2)
-      dry-logic (~> 0.4, >= 0.4.2)
+      dry-logic (~> 0.5, >= 0.5)
     ffi (1.10.0)
     formatador (0.2.5)
     guard (2.15.0)
@@ -123,6 +61,32 @@ GEM
       ffi
       guard (~> 2.3)
       spoon
+    hanami (2.0.0.alpha1)
+      bundler (>= 1.16, < 3)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-system (~> 0.10)
+      hanami-cli (~> 1.0.alpha)
+      hanami-controller (~> 2.0.alpha)
+      hanami-router (~> 2.0.alpha)
+      hanami-utils (~> 2.0.alpha)
+    hanami-cli (1.0.0.alpha1)
+      concurrent-ruby (~> 1.0)
+      hanami-utils (~> 2.0.alpha)
+    hanami-controller (2.0.0.alpha1)
+      hanami-utils (~> 2.0.alpha)
+      rack (~> 2.0)
+    hanami-reloader (1.0.0.alpha1)
+      guard-rack (~> 2.2)
+      hanami (~> 2.0.alpha)
+    hanami-router (2.0.0.alpha1)
+      dry-inflector (~> 0.1)
+      hanami-utils (~> 2.0.alpha)
+      mustermann (~> 1.0)
+      mustermann-contrib (~> 1.0)
+      rack (~> 2.0)
+    hanami-utils (2.0.0.alpha1)
+      concurrent-ruby (~> 1.0)
+      transproc (~> 1.0)
     hansi (0.2.0)
     ice_nine (0.11.2)
     listen (3.1.5)
@@ -161,12 +125,8 @@ DEPENDENCIES
   byebug
   dotenv (~> 2.5)
   guard-puma (~> 0.5)
-  hanami (~> 2.0.alpha)!
-  hanami-cli (~> 1.0.alpha)!
-  hanami-controller (~> 2.0.alpha)!
-  hanami-reloader (~> 1.0.alpha)!
-  hanami-router (~> 2.0.alpha)!
-  hanami-utils (~> 2.0.alpha)!
+  hanami (~> 2.0.alpha)
+  hanami-reloader (~> 1.0.alpha)
   puma (~> 3.12)
 
 BUNDLED WITH
