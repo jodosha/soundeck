@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/hanami.git
-  revision: 7c5e160e27bd4453861bf4929c551e5ba71c8518
+  revision: 27cf0378fcb878806f1693e6a4b702b7c0a2bce4
   branch: enhancement/container-actions-views
   specs:
     hanami (2.0.0.alpha1)
@@ -54,14 +54,15 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    byebug (10.0.2)
+    byebug (11.0.0)
     coderay (1.1.2)
     concurrent-ruby (1.1.4)
     dotenv (2.6.0)
     dry-auto_inject (0.6.0)
       dry-container (>= 0.3.4)
-    dry-configurable (0.7.0)
+    dry-configurable (0.8.1)
       concurrent-ruby (~> 1.0)
+      dry-core (~> 0.4, >= 0.4.7)
     dry-container (0.7.0)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.1, >= 0.1.3)
