@@ -7,8 +7,7 @@ module Web
         include Authentication::Skip
 
         def handle(*, res)
-          Hanami.logger.debug("home")
-          res.body = "OK"
+          res[:planet] = "Earth"
         end
       end
     end

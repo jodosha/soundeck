@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Hanami.application.routes do
+Hanami.application_class.routes do
   mount :web, at: "/" do
     root to: "home#index"
     resources :albums, only: [:show]
