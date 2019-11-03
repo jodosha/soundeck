@@ -1,21 +1,19 @@
 # frozen_string_literal: true
 
+require "web/action"
+
 module Web
   module Actions
     module Albums
       class Show < Web::Action
-        def initialize(albums: AlbumRepository.new)
-          @albums = albums
-        end
+        include Deps["application.album_repo"]
 
         def handle(req, res)
+          album = album_repo.find(req.params[:id])
+
           res.format = :txt
-          res.body = albums.find(req.params[:id])
+          res.body = "Album: #{album.id}"
         end
-
-        private
-
-        attr_reader :albums
       end
     end
   end

@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "web/action"
+
 module Web
   module Actions
     module Home

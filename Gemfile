@@ -2,14 +2,13 @@
 
 source "https://rubygems.org"
 
-# gem "hanami-utils",      "~> 2.0.alpha", require: false, git: "https://github.com/hanami/utils.git",      branch: "unstable"
-# gem "hanami-router",     "~> 2.0.alpha", require: false, git: "https://github.com/hanami/router.git",     branch: "unstable"
-# gem "hanami-controller", "~> 2.0.alpha", require: false, git: "https://github.com/hanami/controller.git", branch: "unstable"
-# gem "hanami-cli",        "~> 1.0.alpha", require: false, git: "https://github.com/hanami/cli.git",        branch: "unstable"
-# gem "hanami",            "~> 2.0.alpha", require: false, git: "https://github.com/hanami/hanami.git",     branch: "unstable"
-gem "hanami", "~> 2.0.alpha"
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-# gem "hanami", path: "../hanami/hanami"
+gem "hanami", github: "hanami/hanami", branch: "enhancement/application-and-slices"
+gem "hanami-cli", github: "hanami/cli", branch: "unstable"
+gem "hanami-controller", github: "hanami/controller", branch: "hanami-application-support"
+gem "hanami-router", github: "hanami/router", branch: "hanami-application-router-support"
+gem "hanami-utils", github: "hanami/utils", branch: "unstable"
 
 group :plugins, :development do
   # gem "hanami-reloader", "~> 1.0.alpha", git: "https://github.com/hanami/reloader.git", branch: "unstable"
