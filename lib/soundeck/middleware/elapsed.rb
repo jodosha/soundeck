@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+# auto_register: false
 
 module Soundeck
   module Middleware
@@ -13,7 +14,7 @@ module Soundeck
         status, headers, body = @app.call(env)
         ending = Process.clock_gettime(Process::CLOCK_MONOTONIC)
 
-        headers["X-Elapsed-Time"] = ending - starting
+        headers["X-Elapsed-Time"] = (ending - starting).to_s
         headers["X-Elapsed-Version"] = @version
 
         [status, headers, body]

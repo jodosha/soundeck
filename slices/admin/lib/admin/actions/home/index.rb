@@ -1,3 +1,5 @@
+require "admin/action"
+
 module Admin
   module Actions
     module Home

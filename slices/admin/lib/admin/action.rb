@@ -1,6 +1,8 @@
 # frozen_string_literal: true
+# auto_register: false
 
-require_relative "./actions/authentication"
+require "hanami/action"
+require_relative "actions/authentication"
 
 module Admin
   class Action < Hanami::Action
