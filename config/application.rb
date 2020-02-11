@@ -1,21 +1,17 @@
 # frozen_string_literal: true
 
-require "dotenv"
-require "hanami/application"
-require_relative "../lib/soundeck/middleware/elapsed"
-
-# This is here until we establish a proper way to load settings through
-# Hanami::Application
-Dotenv.load
+require "hanami"
 
 module Soundeck
   class Application < Hanami::Application
+    require "soundeck/middleware/elapsed"
+
     config.cookies  = { max_age: 600 }
-    config.sessions = :cookie, { secret: ENV["SOUNDECK_SESSIONS_SECRET"] }
+    config.sessions = :cookie, { secret: settings.soundeck_sessions_secret }
     config.middleware.use Middleware::Elapsed, "1.0"
 
     config.environment(:production) do |c|
-      c.base_url = ENV["SOUNDECK_BASE_URL"]
+      c.base_url = settings.soundeck_base_url
       c.logger = { level: :info, formatter: :json }
     end
   end
