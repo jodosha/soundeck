@@ -9,7 +9,7 @@ Hanami.application.routes do
     root to: "home#index"
   end
 
-  mount :web, at: "/" do
+  mount :main, at: "/" do
     root to: "home#index"
     resources :albums, only: [:show]
   end

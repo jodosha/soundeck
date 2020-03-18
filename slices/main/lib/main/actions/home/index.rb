@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require "web/action"
+require "main/action"
 
-module Web
+module Main
   module Actions
     module Home
-      class Index < Web::Action
+      class Index < Main::Action
         include Authentication::Skip
 
         def handle(*, res)
