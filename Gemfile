@@ -9,6 +9,9 @@ gem "hanami-cli", github: "hanami/cli", branch: "unstable"
 gem "hanami-controller", github: "hanami/controller", branch: "unstable"
 gem "hanami-router", github: "hanami/router", branch: "unstable"
 gem "hanami-utils", github: "hanami/utils", branch: "unstable"
+gem "hanami-view", github: "hanami/view", branch: "hanami-application-integration"
+
+gem "slim"
 
 group :plugins, :development do
   # gem "hanami-reloader", "~> 1.0.alpha", git: "https://github.com/hanami/reloader.git", branch: "unstable"
