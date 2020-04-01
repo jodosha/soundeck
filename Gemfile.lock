@@ -18,8 +18,8 @@ GIT
 
 GIT
   remote: https://github.com/hanami/hanami
-  revision: 8c2b9cc7cfa2f7389641b7a894112f05c61f2876
-  branch: unstable
+  revision: 10ad75e179cf348217dfc9f8e2d00bab2e40dfeb
+  branch: enhancement/views-configuration
   specs:
     hanami (2.0.0.alpha1)
       bundler (>= 1.16, < 3)
@@ -55,7 +55,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/view
-  revision: 1a23d774b18c0be1e992df86d7f6405179ca0e0a
+  revision: 50b35ba3a30c0e60ed2e7c0380f9947ca58b502d
   branch: hanami-application-integration
   specs:
     hanami-view (0.7.0)
@@ -75,7 +75,7 @@ GEM
     dotenv (2.6.0)
     dry-auto_inject (0.7.0)
       dry-container (>= 0.3.4)
-    dry-configurable (0.11.4)
+    dry-configurable (0.11.5)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.4, >= 0.4.7)
       dry-equalizer (~> 0.2)
