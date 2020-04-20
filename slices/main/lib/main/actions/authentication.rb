@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Web
+module Main
   module Actions
     module Authentication
       module Skip
@@ -19,7 +19,7 @@ module Web
       private_constant :AUTHENTICATION_HEADER
 
       def authenticate!(*, res)
-        res.headers[AUTHENTICATION_HEADER] = "web"
+        res.headers[AUTHENTICATION_HEADER] = "main"
       end
 
       def keep_response_header?(header)

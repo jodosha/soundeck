@@ -4,7 +4,7 @@
 require "hanami/action"
 require_relative "actions/authentication"
 
-module Web
+module Main
   class Action < Hanami::Action
     include Actions::Authentication
   end

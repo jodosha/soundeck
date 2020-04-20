@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require "web/action"
+require "main/action"
 
-module Web
+module Main
   module Actions
     module Albums
-      class Show < Web::Action
+      class Show < Main::Action
         include Deps["application.album_repo"]
 
         def handle(req, res)
