@@ -2,7 +2,9 @@ require "main/view"
 
 module Main
   module Views
-    class Home < Main::View
+    module Home
+      class Index < Main::View
+      end
     end
   end
 end

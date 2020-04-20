@@ -8,9 +8,11 @@ module Main
       class Index < Main::Action
         include Authentication::Skip
 
+        include Deps[view: "views.home.index"]
+
         def handle(*, res)
           Hanami.logger.debug("home")
-          res.body = "OK"
+          res.render view
         end
       end
     end
