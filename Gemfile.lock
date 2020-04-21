@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/controller
-  revision: cb74da9a26f6f36d78ccd8a567807b99f2509065
+  revision: 46b0564c055f0cc6ebc934f14870061e1d34ea3a
   branch: enhancement/view-rendering-1
   specs:
     hanami-controller (2.0.0.alpha1)
@@ -18,8 +18,8 @@ GIT
 
 GIT
   remote: https://github.com/hanami/hanami
-  revision: 6ed20d77eeeac4b82de263fb5784712d58c84387
-  branch: unstable
+  revision: b54286a37e2c368a2b9aa6e92eace5702d3158b2
+  branch: enhancement/actions-views-rendering-1
   specs:
     hanami (2.0.0.alpha1)
       bundler (>= 1.16, < 3)
