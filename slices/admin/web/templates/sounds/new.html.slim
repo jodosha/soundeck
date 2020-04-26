@@ -1,0 +1,12 @@
+h1 New sound
+
+form action="/admin/sounds" method="post"
+  p
+    strong Title
+  - if errors[:title]
+    - errors[:title].each do |error|
+      p = error
+  p
+    input name="sound[title]" type="text" value=sound[:title]
+
+  button Create sound
