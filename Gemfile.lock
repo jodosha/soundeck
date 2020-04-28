@@ -9,8 +9,8 @@ GIT
 
 GIT
   remote: https://github.com/hanami/controller
-  revision: fe4c3392282e535096e73a71bdb4d44cca05cc12
-  branch: unstable
+  revision: 46b0564c055f0cc6ebc934f14870061e1d34ea3a
+  branch: enhancement/view-rendering-1
   specs:
     hanami-controller (2.0.0.alpha1)
       hanami-utils (~> 2.0.alpha)
@@ -18,8 +18,8 @@ GIT
 
 GIT
   remote: https://github.com/hanami/hanami
-  revision: 6ed20d77eeeac4b82de263fb5784712d58c84387
-  branch: unstable
+  revision: b54286a37e2c368a2b9aa6e92eace5702d3158b2
+  branch: enhancement/actions-views-rendering-1
   specs:
     hanami (2.0.0.alpha1)
       bundler (>= 1.16, < 3)
@@ -68,10 +68,20 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     byebug (11.1.2)
+    capybara (3.32.1)
+      addressable
+      mini_mime (>= 0.1.3)
+      nokogiri (~> 1.8)
+      rack (>= 1.6.0)
+      rack-test (>= 0.6.3)
+      regexp_parser (~> 1.5)
+      xpath (~> 3.2)
     coderay (1.1.2)
     concurrent-ruby (1.1.6)
-    dotenv (2.7.5)
+    diff-lcs (1.3)
     dry-auto_inject (0.7.0)
       dry-container (>= 0.3.4)
     dry-configurable (0.11.5)
@@ -89,15 +99,28 @@ GEM
       dry-core (~> 0.4)
       dry-equalizer (~> 0.2)
     dry-inflector (0.2.0)
+    dry-initializer (3.0.3)
     dry-logic (1.0.6)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.2)
       dry-equalizer (~> 0.2)
+    dry-monads (1.3.5)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.4, >= 0.4.4)
+      dry-equalizer
     dry-monitor (0.3.2)
       dry-configurable (~> 0.5)
       dry-core (~> 0.4)
       dry-equalizer (~> 0.2)
       dry-events (~> 0.2)
+    dry-schema (1.5.0)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.8, >= 0.8.3)
+      dry-core (~> 0.4)
+      dry-equalizer (~> 0.2)
+      dry-initializer (~> 3.0)
+      dry-logic (~> 1.0)
+      dry-types (~> 1.4)
     dry-struct (1.3.0)
       dry-core (~> 0.4, >= 0.4.4)
       dry-equalizer (~> 0.3)
@@ -119,6 +142,13 @@ GEM
       dry-equalizer (~> 0.3)
       dry-inflector (~> 0.1, >= 0.1.2)
       dry-logic (~> 1.0, >= 1.0.2)
+    dry-validation (1.5.0)
+      concurrent-ruby (~> 1.0)
+      dry-container (~> 0.7, >= 0.7.1)
+      dry-core (~> 0.4)
+      dry-equalizer (~> 0.2)
+      dry-initializer (~> 3.0)
+      dry-schema (~> 1.5)
     ffi (1.12.2)
     formatador (0.2.5)
     guard (2.16.2)
@@ -149,23 +179,44 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     lumberjack (1.2.4)
     method_source (1.0.0)
+    mini_mime (1.0.2)
+    mini_portile2 (2.4.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     mustermann-contrib (1.1.1)
       hansi (~> 0.2.0)
       mustermann (= 1.1.1)
     nenv (0.3.0)
+    nokogiri (1.10.9)
+      mini_portile2 (~> 2.4.0)
     notiffany (0.1.3)
       nenv (~> 0.1)
       shellany (~> 0.0)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    public_suffix (4.0.4)
     puma (3.12.4)
     rack (2.2.2)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    regexp_parser (1.7.0)
+    rspec (3.9.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
+    rspec-core (3.9.1)
+      rspec-support (~> 3.9.1)
+    rspec-expectations (3.9.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-mocks (3.9.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-support (3.9.2)
     ruby2_keywords (0.0.2)
     shellany (0.0.1)
     slim (4.0.1)
@@ -177,13 +228,17 @@ GEM
     thor (1.0.1)
     tilt (2.0.10)
     transproc (1.1.1)
+    xpath (3.2.0)
+      nokogiri (~> 1.8)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   byebug
-  dotenv (~> 2.5)
+  capybara (~> 3.23)
+  dry-monads (~> 1.0)
+  dry-validation (~> 1.0)
   guard-puma (~> 0.5)
   hanami!
   hanami-cli!
@@ -193,7 +248,9 @@ DEPENDENCIES
   hanami-utils!
   hanami-view!
   puma (~> 3.12)
-  slim
+  rack-test (~> 1.1)
+  rspec (~> 3.9)
+  slim (~> 4.0)
 
 BUNDLED WITH
    2.1.4

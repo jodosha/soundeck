@@ -10,5 +10,8 @@ Hanami.application.routes do
 
   slice :admin, at: "/admin" do
     root to: "home#index"
+
+    get "sounds/new", to: "sounds#new"
+    post "sounds", to: "sounds#create"
   end
 end
