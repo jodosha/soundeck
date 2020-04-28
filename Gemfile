@@ -4,6 +4,9 @@ source "https://rubygems.org"
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
+# Web server
+gem "puma", "~> 3.12"
+
 # Hanami dependencies
 gem "hanami", github: "hanami/hanami", branch: "enhancement/actions-views-rendering-1"
 gem "hanami-cli", github: "hanami/cli", branch: "unstable"
@@ -27,8 +30,6 @@ group :development do
 end
 
 group :development, :test do
-  gem "byebug", require: false
+  gem "byebug"
+  gem "rspec", "~> 3.9"
 end
-
-gem "puma",   "~> 3.12"
-gem "dotenv", "~> 2.5"
