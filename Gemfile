@@ -33,3 +33,8 @@ group :development, :test do
   gem "byebug"
   gem "rspec", "~> 3.9"
 end
+
+group :test do
+  gem "capybara", "~> 3.23"
+  gem "rack-test", "~> 1.1"
+end
