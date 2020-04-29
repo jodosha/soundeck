@@ -8,12 +8,12 @@ module Admin
         include Dry::Monads[:result]
 
         include Deps[
-          "sounds.commands.create",
+          create_sound: "sounds.commands.create",
           view: "views.sounds.new",
         ]
 
         def handle(req, res)
-          case create.(req.params[:sound])
+          case create_sound.(req.params[:sound])
           in Success(_)
             res.redirect_to "/admin"
           in Failure[:validation, validation]
