@@ -4,6 +4,6 @@
 require "hanami/view"
 
 module Main
-  class View < Hanami::View[:main]
+  class View < Hanami::View
   end
 end

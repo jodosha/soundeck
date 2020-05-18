@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/hanami
-  revision: 6ed20d77eeeac4b82de263fb5784712d58c84387
+  revision: 877b5e71ca19ecfdf1f5a37d67111fae39c534f3
   branch: unstable
   specs:
     hanami (2.0.0.alpha1)
@@ -54,7 +54,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/view
-  revision: 520cf4da6aa38c4bcc9fc543dfc8b6693105c220
+  revision: 622c0dd3e79e068353383cbf030d6b86af104577
   branch: master
   specs:
     hanami-view (2.0.0.alpha1)
