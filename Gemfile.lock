@@ -9,8 +9,8 @@ GIT
 
 GIT
   remote: https://github.com/hanami/controller
-  revision: cb74da9a26f6f36d78ccd8a567807b99f2509065
-  branch: enhancement/view-rendering-1
+  revision: 2cec414e7a7981fb0beedbea9476bfc62a03d5d1
+  branch: unstable
   specs:
     hanami-controller (2.0.0.alpha1)
       hanami-utils (~> 2.0.alpha)
