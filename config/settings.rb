@@ -1,4 +1,4 @@
 Hanami.application.settings do
-  setting :soundeck_base_url
-  setting :soundeck_sessions_secret
+  setting :base_url
+  setting :session_secret
 end

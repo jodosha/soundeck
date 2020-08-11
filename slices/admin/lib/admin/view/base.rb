@@ -4,6 +4,8 @@
 require "hanami/view"
 
 module Admin
-  class View < Hanami::View
+  module View
+    class Base < Hanami::View
+    end
   end
 end
