@@ -9,16 +9,17 @@ GIT
 
 GIT
   remote: https://github.com/hanami/controller
-  revision: 2cec414e7a7981fb0beedbea9476bfc62a03d5d1
+  revision: a2ead8e5eee905bb584d90d9ef7726d7a5d7d019
   branch: unstable
   specs:
     hanami-controller (2.0.0.alpha1)
+      dry-configurable (~> 0.11, >= 0.11.6)
       hanami-utils (~> 2.0.alpha)
       rack (~> 2.0)
 
 GIT
   remote: https://github.com/hanami/hanami
-  revision: 877b5e71ca19ecfdf1f5a37d67111fae39c534f3
+  revision: 1c636b8459bfa82eb52d5be2fd7b433cd4a86d91
   branch: unstable
   specs:
     hanami (2.0.0.alpha1)
@@ -35,17 +36,17 @@ GIT
 
 GIT
   remote: https://github.com/hanami/router
-  revision: 8ccaea059052324f3f6745d253bcfc7b1ca3d8da
+  revision: 3d469cdac3559b65c40b08ace882ac3e407c5b81
   branch: unstable
   specs:
-    hanami-router (2.0.0.alpha2)
+    hanami-router (2.0.0.alpha3)
       mustermann (~> 1.0)
       mustermann-contrib (~> 1.0)
       rack (~> 2.0)
 
 GIT
   remote: https://github.com/hanami/utils
-  revision: 9de4ddcce3773066167912ce0b0cf4217d8017ed
+  revision: d1a485a35a7afcee01dee28d77c0474c6ff15efe
   branch: unstable
   specs:
     hanami-utils (2.0.0.alpha1)
@@ -54,7 +55,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/view
-  revision: 622c0dd3e79e068353383cbf030d6b86af104577
+  revision: c4fb06a6b419cc83f2bb7f8b3027b07f03d3f199
   branch: master
   specs:
     hanami-view (2.0.0.alpha1)
@@ -68,13 +69,13 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    byebug (11.1.2)
-    coderay (1.1.2)
-    concurrent-ruby (1.1.6)
-    dotenv (2.7.5)
+    byebug (11.1.3)
+    coderay (1.1.3)
+    concurrent-ruby (1.1.7)
+    dotenv (2.7.6)
     dry-auto_inject (0.7.0)
       dry-container (>= 0.3.4)
-    dry-configurable (0.11.5)
+    dry-configurable (0.11.6)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.4, >= 0.4.7)
       dry-equalizer (~> 0.2)
@@ -119,7 +120,7 @@ GEM
       dry-equalizer (~> 0.3)
       dry-inflector (~> 0.1, >= 0.1.2)
       dry-logic (~> 1.0, >= 1.0.2)
-    ffi (1.12.2)
+    ffi (1.13.1)
     formatador (0.2.5)
     guard (2.16.2)
       formatador (>= 0.2.4)
@@ -147,7 +148,7 @@ GEM
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    lumberjack (1.2.4)
+    lumberjack (1.2.7)
     method_source (1.0.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
@@ -162,13 +163,13 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     puma (3.12.6)
-    rack (2.2.2)
-    rb-fsevent (0.10.3)
+    rack (2.2.3)
+    rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     ruby2_keywords (0.0.2)
     shellany (0.0.1)
-    slim (4.0.1)
+    slim (4.1.0)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
     spoon (0.0.6)
