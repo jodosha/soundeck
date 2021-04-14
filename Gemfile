@@ -4,12 +4,16 @@ source "https://rubygems.org"
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-gem "hanami", github: "hanami/hanami", branch: "unstable"
+gem "hanami", github: "hanami/hanami", branch: "enhancement/unstable/configure-zeitwerk-first-pass"
+# gem "hanami", path: "~/Source/hanami/hanami"
 gem "hanami-cli", github: "hanami/cli", branch: "unstable"
 gem "hanami-controller", github: "hanami/controller", branch: "unstable"
 gem "hanami-router", github: "hanami/router", branch: "unstable"
 gem "hanami-utils", github: "hanami/utils", branch: "unstable"
 gem "hanami-view", github: "hanami/view", branch: "master"
+
+gem "dry-system", git: "https://github.com/dry-rb/dry-system.git", branch: "default-settings-for-component-dirs"
+gem "dry-configurable", git: "https://github.com/dry-rb/dry-configurable.git", branch: "master"
 
 gem "slim"
 

@@ -6,6 +6,7 @@ Hanami.application.routes do
 
     # TODO: reenable when we support resource-based routes
     # resources :albums, only: [:show]
+    get "albums/:id", to: "albums#show"
   end
 
   slice :admin, at: "/admin" do

@@ -1,5 +1,3 @@
-require "main/view"
-
 module Main
   module Views
     module Home
