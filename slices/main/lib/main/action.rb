@@ -2,7 +2,6 @@
 # auto_register: false
 
 require "hanami/action"
-require_relative "actions/authentication"
 
 module Main
   class Action < Hanami::Action

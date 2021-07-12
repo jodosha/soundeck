@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "main/action"
-
 module Main
   module Actions
     module Albums
@@ -11,7 +9,6 @@ module Main
         def handle(req, res)
           album = album_repo.find(req.params[:id])
 
-          res.format = :txt
           res.body = "Album: #{album.id}"
         end
       end
