@@ -19,12 +19,12 @@ group :plugins, :development do
 end
 
 group :development do
-  gem "guard-puma", "~> 0.5"
+  gem "guard-puma", "~> 0.7"
 end
 
 group :development, :test do
   gem "byebug", require: false
 end
 
-gem "puma",   "~> 3.12"
+gem "puma",   "~> 5.5"
 gem "dotenv", "~> 2.5"
